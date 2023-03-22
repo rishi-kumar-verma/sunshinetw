@@ -21,6 +21,7 @@ class User extends Authenticatable
         'firstname',
         'email',
         'subject',
+        'phone',
         'message',
         
     ];

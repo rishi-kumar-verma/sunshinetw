@@ -1,106 +1,120 @@
+<!--==================
+		Header
+	===================-->
+	<header>
 
-		<!-- Main Header-->
-		<header class="main-header">
+		<div class="main-menu">
+			<div class="container">
+				<div class="row">
+					<!-- Main Menu -->
+					<div class="col-sm-12">
+						<nav class="navbar" id="main-nav">
+							<div class="containers">
 
-			<!--Header-Upper-->
-			<div class="header-upper">
-				<div class="auto-container">
-					<div class="clearfix">
 
-						<div class="pull-left logo-box">
-							<div class="logo"><a href="{{url('/')}}"><img src="{{ asset('images/logo.png')}}" alt="" title=""></a></div>
-						</div>
-
-						<div class="nav-outer clearfix">
-
-							<!-- Main Menu -->
-							<nav class="main-menu navbar-expand-md">
 								<div class="navbar-header">
-									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#edulight-navbar-collapse" aria-expanded="false">
+										<span class="sr-only">Toggle navigation</span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 										<span class="icon-bar"></span>
 									</button>
-								</div>
+									<!-- Change Logo Here -->
+									<a class="navbar-brand" href=""><img src="resources/images/logo.png" alt="EduLight"></a>
+								</div><!-- End .navbar-header -->
 
-								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-									<ul class="navigation clearfix">
+								<!-- Fullscreen search -->
+								<div class="search-wrap">
+									<div class="search-inner">
+										<div class="search-cell">
+											<form method="get">
+												<div class="search-field-holder">
+													<input type="search" class="form-control main-search-input" placeholder="Search ...">
+													<button type="submit"><i class="fa fa-search"></i></button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div> <!-- end fullscreen search -->
 
-										<li class="current "><a href="{{url('home')}}">Home</a>
+								<div class="nav-container">
+									<div class="menu-search">
+										<ul class="list-unstyled">
+											<li class="hidden-xs">
+												<ul class="list-unstyled">
+													<li class="nav-search-wrap hidden-xs">
+														<a href="#" class="nav-search search-trigger">
+															<i class="fa fa-search"></i>
+														</a>
+													</li>
+												</ul>
+											</li><!-- Ends .nav-right -->
+										</ul>
+									</div>
+									<div class="collapse navbar-collapse" id="edulight-navbar-collapse">
+										<ul class="nav navbar-nav">
 
-										</li>
-										<li class="dropdown"><a href="#">About Us</a>
-											<ul>
-												<li><a href="{{url('about')}}">About Us</a></li>
-												<li><a href="{{url('team')}}">Our Team</a></li>
-												<li><a href="{{url('testimonial')}}">Testimonial</a></li>
-											</ul>
-										</li>
-										<li><a href="{{url('services')}}">Services</a></li>
-										<li><a href="{{url('portfolio')}}">Portfolio </a></li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+												<ul class="dropdown-menu">
+													<li><a href="founder.html">Founder</a></li>
+													<li><a href="chairman.html">Chairman</a></li>
+													<li><a href="director.html">Director-Manager</a></li>
 
-										<li><a href="{{url('blog-list')}}">Blog</a></li>
+													<li><a href="schairman.html">Society Adhyaksh</a></li>
+													<li><a href="head.html">Head Of Management</a></li>
+													<li><a href="aboutus.html">School</a></li>
 
-										
-										<li><a href="{{url('contact')}}">Contact us</a></li>
-									</ul>
-								</div>
+												</ul>
+											</li><!-- End Contact -->
 
-							</nav>
 
-						</div>
+											<li class="dropdown">
+												<a href="alumni.html"> Alumni</a>
 
+											</li><!-- End Teacher -->
+											<li class="dropdown">
+
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Event</a>
+												<ul class="dropdown-menu">
+													<li><a href="achievement.html">Achievement</a></li>
+													<li><a href="events.html">Event</a></li>
+												</ul>
+
+											</li><!-- End Pages -->
+											<li class="dropdown">
+
+											<li class="dropdown">
+												<a href="gallery.html">Gallery</a>
+
+											</li><!-- End Pages -->
+
+											<li class="dropdown">
+												<a href="mentors.html">Mentors</a>
+
+											</li><!-- End Pages -->
+
+											<li class="dropdown">
+												<a href="beteacher.html">Career</a>
+
+											</li><!-- End Pages -->
+
+											<li class="dropdown">
+												<a href="contact">Contact Us</a>
+
+											</li><!-- End Pages -->
+
+
+
+
+										</ul>
+									</div><!-- .navbar-collapse -->
+								</div><!-- Ends: .nav-container -->
+
+							</div><!-- .container -->
+						</nav>
 					</div>
 				</div>
 			</div>
-			<!--End Header Upper-->
-
-			<!--Sticky Header-->
-			<div class="sticky-header">
-				<div class="auto-container clearfix">
-					<!--Logo-->
-					<div class="logo pull-left">
-						<a href="{{url('/')}}" class="img-responsive"><img src="{{ asset('images/logo.png')}}" alt="" title=""></a>
-					</div>
-
-					<!--Right Col-->
-					<div class="right-col pull-right">
-						<!-- Main Menu -->
-						<nav class="main-menu navbar-expand-md">
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-
-							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent1">
-							<ul class="navigation clearfix">
-										<li ><a href="{{url('home')}}">Home</a>
-
-										</li>
-										<li class="dropdown"><a href="#">About Us</a>
-											<ul>
-												<li><a href="{{url('about')}}">About Us</a></li>
-												<li><a href="{{url('team')}}">Our Team</a></li>
-												<li><a href="{{url('testimonial')}}">Testimonial</a></li>
-											</ul>
-										</li>
-										<li><a href="{{url('services')}}">Services</a></li>
-										<li><a href="{{url('portfolio')}}">Portfolio </a></li>
-
-										
-										<li><a href="{{url('blog-list')}}">Blog</a></li>
-
-										<li class="current "><a href="{{url('contact')}}">Contact us</a></li>
-									</ul>
-						</div>
-					</nav><!-- Main Menu End-->
-				</div>
-
-			</div>
-		</div>
-		<!--End Sticky Header-->
-		
-	</header>
-	<!--End Main Header -->
-	
+		</div><!-- Ends: .main-menu -->
+	</header><!-- ends: Header -->

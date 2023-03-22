@@ -31,6 +31,7 @@ class Controller extends BaseController
             $info = new User;
             $info->firstname = $request->firstname;
             $info->subject = $request->subject;
+            $info->phone = $request->phone;
             $info->message = $request->message;
             $info->email = $request->email;
             $info->save();
@@ -39,10 +40,11 @@ class Controller extends BaseController
                 'Name' => $request->get('firstname'),
                 'Email' => $request->get('email'),
                 'Subject' => $request->get('subject'),
+                'phone' => $request->get('phone'),
                 'Message' => $request->get('message'),
             ];
 
-            Mail::to('rashidayesha208@gmail.com')->send(new \App\Mail\MailSend($data));
+            // Mail::to('rashidayesha208@gmail.com')->send(new \App\Mail\MailSend($data));
             // Mail::send('message', $data, function ($message) use ($request){
             //     $message->from($request->email);
              
@@ -174,6 +176,17 @@ class Controller extends BaseController
             return View('contact')
                 ->with(compact('second'))
                 ->with('banner', ContactBanner::orderBy('id', 'DESC')->first());
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+        }
+    }
+
+    public function getcontactus()
+    {
+        try {
+            $data['users']=User::all();
+            return view('admin.Contact.contactusview')->with($data);
         } catch (Exception $e) {
 
             return $e->getMessage();

@@ -241,6 +241,7 @@ Route::get('/edit_contactbanner',[Controller::class,'editbanner']);
 
 //comment
 
+Route::get('/view_contactus',[Controller::class,'getcontactus']);
 
 Route::get('/add_contactsection2',[Controller::class,'displaycontactsection2']);
 //contact Details

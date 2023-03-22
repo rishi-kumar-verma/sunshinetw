@@ -1,119 +1,82 @@
-    <!--Main Footer-->
-    <footer class="main-footer style-two">
-        <div class="auto-container">
-            <!--Widgets Section-->
-            <div class="widgets-section">
-                <div class="row clearfix">
 
-                    <!--Column-->
-                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
-                        <div class="row clearfix">
+	<!--==================
+		Footer
+	===================-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 col-md-3 col-lg-3">
+					<div class="widget about-widget">
+						<div class="widget-title">
+							<h2>Sunshine School</h2>
+						</div>
+						<div class="widget-content">
+							<p>The school commenced in 1982. Sunshine School always focuses on
+								providing quality education and the best values to their students that help them become future
+								leaders.
+							</p>
+						</div>
+					</div><!-- ends: .widget -->
 
-                            <!--Footer Column-->
-                            <div class="footer-column col-lg-7 col-md-6 col-sm-12">
-                                <div class="footer-widget logo-widget">
-                                    <div class="logo">
-                                        <a href="{{url('home')}}"><img src="{{ asset('images/footer-logo.png')}}" alt="" /></a>
-                                    </div>
-                                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
-                                    <ul class="list-style-one">
-                                        <li><span class="icon fa fa-phone"></span> +123 (4567) 890</li>
-                                        <li><span class="icon fa fa-envelope"></span> info@its.com </li>
-                                        <li><span class="icon fa fa-home"></span>380 St Dummy Road, lahore <br> VIC 3004, Pakistan</li>
-                                    </ul>
-                                </div>
-                            </div>
+				</div><!-- ends: .col-sm-3 -->
 
-                            <!--Footer Column-->
-                            <div class="footer-column col-lg-5 col-md-6 col-sm-12">
-                                <div class="footer-widget links-widget">
-                                    <h4>Links</h4>
-                                    <ul class="list-link">
-                                        <li><a href="{{url('home')}}">Home</a></li>
-                                        <li><a href="{{url('services')}}">Services</a></li>
-                                        <li><a href="{{url('about')}}">About us</a></li>
-                                        <li><a href="{{url('testimonial')}}">Testimonials</a></li>
-                                        <li><a href="#">News</a></li>
-                                        <li><a href="{{url('contact')}}">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+				<div class="col-sm-4 col-md-3 col-lg-3">
+					<div class="widget about-widget">
+						<div class="widget-title">
+							<h2>Contact Us</h2>
+						</div>
+						<div class="widget-content">
 
-                        </div>
-                    </div>
+							<ul class="list-unstyled">
+								<li><i class="fa fa-envelope"></i> info@sunshinetw.in</li>
+								<li><i class="fa fa-phone"></i> +91-75056 25664</li>
+								<li><i class="fa fa-map-marker"></i> Near pachraha kunj, Etawah, India, 206001</li>
+							</ul>
+						</div>
+					</div><!-- ends: .widget -->
 
-                    <!--Column-->
-                    <div class="big-column col-lg-6 col-md-12 col-sm-12">
-                        <div class="row clearfix">
 
-                            <!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget links-widget">
-                                    <h4>Support</h4>
-                                    <ul class="list-link">
-                                        <li><a href="{{url('contact')}}">Contact Us</a></li>
-                                        <li><a href="#">Submit a Ticket</a></li>
-                                        <li><a href="#">Visit Knowledge Base</a></li>
-                                        <li><a href="#">Support System</a></li>
-                                        <li><a href="#">Refund Policy</a></li>
-                                        <li><a href="#">Professional Services</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+				</div><!-- ends: .col-sm-3 -->
 
-                            <!--Footer Column-->
-                            <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                <div class="footer-widget gallery-widget">
-                                    <h4>Gallery</h4>
-                                    <div class="widget-content">
-                                        <div class="images-outer clearfix">
-                                            <!--Image Box-->
-                                            <figure class="image-box"><a href="{{ asset('images/gallery/1.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{ asset('images/gallery/footer-gallery-thumb-1.jpg')}}" alt=""></a></figure>
-                                            <!--Image Box-->
-                                            <figure class="image-box"><a href="{{ asset('images/gallery/2.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{ asset('images/gallery/footer-gallery-thumb-2.jpg')}}" alt=""></a></figure>
-                                            <!--Image Box-->
-                                            <figure class="image-box"><a href="{{ asset('images/gallery/3.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{ asset('images/gallery/footer-gallery-thumb-3.jpg')}}" alt=""></a></figure>
-                                            <!--Image Box-->
-                                            <figure class="image-box"><a href="{{ asset('images/gallery/4.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{ asset('images/gallery/footer-gallery-thumb-4.jpg')}}" alt=""></a></figure>
-                                            <!--Image Box-->
-                                            <figure class="image-box"><a href="{{ asset('images/gallery/5.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{ asset('images/gallery/footer-gallery-thumb-5.jpg')}}" alt=""></a></figure>
-                                            <!--Image Box-->
-                                            <figure class="image-box"><a href="{{ asset('images/gallery/6.jpg')}}" class="lightbox-image" data-fancybox="footer-gallery" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="{{ asset('images/gallery/footer-gallery-thumb-6.jpg')}}" alt=""></a></figure>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                        </div>
-                    </div>
+				<div class="col-sm-5 col-md-3 col-lg-3">
+					<div class="widget about-widget">
+						<div class="widget-title">
 
-                </div>
-            </div>
-        </div>
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="inner-container">
-                    <div class="row clearfix">
-                        <!-- Copyright Column -->
-                        <div class="copyright-column col-lg-6 col-md-6 col-sm-12">
-                            <div class="copyright">2020 &copy; All rights reserved by <a href="#">ITS</a></div>
-                        </div>
+						</div>
 
-                        <!-- Social Column -->
-                        <div class="social-column col-lg-6 col-md-6 col-sm-12">
-                            <ul>
-                                <li class="follow">Follow us: </li>
-                                <li><a href="#"><span class="fa fa-facebook-square"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter-square"></span></a></li>
-                                <li><a href="#"><span class="fa fa-linkedin-square"></span></a></li>
-                                <li><a href="#"><span class="fa fa-google-plus-square"></span></a></li>
-                                <li><a href="#"><span class="fa fa-rss-square"></span></a></li>
-                            </ul>
-                        </div>
+						<div class="widget footer-social">
+							<div class="widget-title">
+								<h2>Follow Us</h2>
+							</div>
+							<div class="widget-content">
+								<ul class="list-unstyled">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div><!-- ends: .widget -->
+					</div><!-- ends: .col-sm-3 -->
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+				</div>
+	</footer>
+	<!-- ends: Footer -->
+	<!-- Footer Bottom -->
+	<div class="footer-bottom footer-bottom-default">
+		<div class="container">
+			<div class="footer-bottom-inner">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<p>&copy; Copyright 2023 Sunshine School | All rights reserved</p>
+					</div>
+					<div class="col-md-6 col-sm-12">
+
+						<p id="back-top"><a href="#top"><i class="fa fa-angle-up"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

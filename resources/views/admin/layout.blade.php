@@ -65,7 +65,11 @@
               <ul class="nav side-menu">
                 <li><a><i class="fa fa-sitemap"></i>Settings <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-
+                  <li><a> Contact Us <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="{{('view_contactus')}}">View Contact Us</a></li>
+                      </ul>
+                    </li>
                     <li><a> Banner <span class="fa fa-chevron-down"></span></a>
                       <ul class="nav child_menu">
                         <li><a href="{{('view_banner')}}">View Banner</a></li>
@@ -243,7 +247,7 @@
             <a data-toggle="tooltip" data-placement="top" title="Lock">
               <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
             </a>
-            <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="{{ url('/logout') }}">
               <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
             </a>
           </div>
@@ -267,7 +271,7 @@
                 <ul class="dropdown-menu dropdown-usermenu pull-right">
 
 
-                  <li><a href="/logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  <li><a href="{{ url('/logout') }}"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                 </ul>
               </li>
               </li>

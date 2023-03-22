@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 22, 2023 at 09:36 AM
+-- Generation Time: Mar 22, 2023 at 04:55 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.1.13
 
@@ -127,7 +127,7 @@ CREATE TABLE IF NOT EXISTS `admins` (
 --
 
 INSERT INTO `admins` (`id`, `username`, `password`, `created_at`, `updated_at`) VALUES
-(1, 'rishianand001@gmail.com', '$2y$10$GNS/qDwlgvhM2DULsIRTTeR3yPYl/XXHLO9Hj2GspL.AKt2UNJicq', NULL, NULL);
+(1, 'rishianand001@gmail.com', '$2y$10$FlklWRlWxCrGOTju25ei4uwMeIcRCLikf29wgYc/ePGtA2iUrBSEe', '2023-03-22 16:54:48', '2023-03-21 18:30:00');
 
 -- --------------------------------------------------------
 
@@ -144,14 +144,7 @@ CREATE TABLE IF NOT EXISTS `banners` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `banners`
---
-
-INSERT INTO `banners` (`id`, `title`, `image`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'banner 1', '1679474958.1.jpg', 'banner 1 Description', '2023-03-22 03:19:18', '2023-03-22 03:19:18');
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -362,14 +355,7 @@ CREATE TABLE IF NOT EXISTS `homefourthsections` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `homefourthsections`
---
-
-INSERT INTO `homefourthsections` (`id`, `icon`, `title`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'icon', 'consultation 1', 'consultation 1 Description', '2023-03-22 03:23:18', '2023-03-22 03:23:18');
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -386,14 +372,7 @@ CREATE TABLE IF NOT EXISTS `homesecondsections` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `homesecondsections`
---
-
-INSERT INTO `homesecondsections` (`id`, `icon`, `title`, `description`, `created_at`, `updated_at`) VALUES
-(1, 'service 1', 'service 1', 'service 1 Description', '2023-03-22 03:20:02', '2023-03-22 03:20:02');
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -472,14 +451,7 @@ CREATE TABLE IF NOT EXISTS `homethirdsections` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `homethirdsections`
---
-
-INSERT INTO `homethirdsections` (`id`, `name`, `description`, `detail`, `title_one`, `desc_one`, `title_two`, `desc_two`, `title_thr`, `desc_thr`, `hidden_id`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Tab 1', 'Tab 1 Description', 'Tab 1 Detail', 'Feature 1 Title', 'Feature 1 description', 'Feature 2 Title', 'Feature 2 description', 'Feature 3 Title', 'Feature 3 description', NULL, '1679475146.5.jpg', '2023-03-22 03:22:26', '2023-03-22 03:22:26');
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -906,19 +878,13 @@ CREATE TABLE IF NOT EXISTS `users` (
   `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT,
   `firstname` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `subject` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `phone` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `message` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(191) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `firstname`, `subject`, `message`, `email`, `created_at`, `updated_at`) VALUES
-(1, 'Rishi', 'test', 'test', 'rishianand001@gmail.com', NULL, NULL);
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

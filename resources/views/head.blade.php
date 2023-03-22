@@ -1,19 +1,34 @@
-
 <head>
 	<meta charset="utf-8">
-	<title>Interact Tech Solution</title>
-	<!-- Stylesheets -->
-	<link href="{{ asset('css/bootstrap.css')}}" rel="stylesheet">
-	<link href="{{ asset('css/main.css')}}" rel="stylesheet">
-	<link href="{{ asset('css/responsive.css')}}" rel="stylesheet">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="Sunshine School - Etawah">
+	<meta name="keywords" content="education, etawah, sunshine, school">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sunshine School - Etawah</title>
 
-	<link rel="shortcut icon" href="" type="image/x-icon">
-	<link rel="icon" href="{{ asset('images/fivi.png')}}" type="image/x-icon">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="resources/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="resources/images/favicon.ico" type="image/x-icon">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="resources/css/assets/bootstrap.min.css">
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" href="resources/css/assets/normalize.css">
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="resources/css/assets/font-awesome.min.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="resources/css/assets/owl.carousel.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="resources/css/assets/magnific-popup.css">
+	<!-- Mean Menu -->
+	<link rel="stylesheet" href="resources/css/assets/meanmenu.css">
+	<!-- Revolution Slider -->
+	<link rel="stylesheet" href="resources/css/assets/revolution/layers.css">
+	<link rel="stylesheet" href="resources/css/assets/revolution/navigation.css">
+	<link rel="stylesheet" href="resources/css/assets/revolution/settings.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500%7CRoboto+Slab:300,500,400,700" rel="stylesheet">
 
-	<!-- Responsive -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+	<link rel="stylesheet" href="resources/css/style.css">
+	<link rel="stylesheet" href="resources/css/assets/responsive.css">
 </head>
