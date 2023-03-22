@@ -20,7 +20,7 @@
 										<span class="icon-bar"></span>
 									</button>
 									<!-- Change Logo Here -->
-									<a class="navbar-brand" href=""><img src="resources/images/logo.png" alt="EduLight"></a>
+									<a class="navbar-brand" href="{{ url('/') }}"><img src="resources/images/logo.png" alt="EduLight"></a>
 								</div><!-- End .navbar-header -->
 
 								<!-- Fullscreen search -->
