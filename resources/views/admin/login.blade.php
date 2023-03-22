@@ -10,16 +10,16 @@
     <title>Interact Tech Solution | </title>
 
     <!-- Bootstrap -->
-    <link href="admin_theme/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ asset('admin_theme/vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="admin_theme/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ asset('admin_theme/vendors/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
     <!-- NProgress -->
-    <link href="admin_theme/vendors/nprogress/nprogress.css" rel="stylesheet">
+    <link href="{{ asset('admin_theme/vendors/nprogress/nprogress.css')}}" rel="stylesheet">
     <!-- Animate.css -->
-    <link href="admin_theme/vendors/animate.css/animate.min.css" rel="stylesheet">
+    <link href="{{ asset('admin_theme/vendors/animate.css/animate.min.css')}}" rel="stylesheet">
 
     <!-- Custom Theme Style -->
-    <link href="admin_theme/build/css/custom.min.css" rel="stylesheet">
+    <link href="{{ asset('admin_theme/build/css/custom.min.css')}}" rel="stylesheet">
   </head>
 
   <body class="login">
