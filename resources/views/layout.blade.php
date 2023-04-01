@@ -6,9 +6,9 @@
 	<div id="preloader">
 		<div id="status">&nbsp;</div>
 	</div>
-  @include('header')
+  	@include('header')
 
-  @yield('content')
+  	@yield('content')
 
 	@include('footer')
 	

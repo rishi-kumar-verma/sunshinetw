@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 22, 2023 at 04:55 PM
+-- Generation Time: Apr 01, 2023 at 07:55 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.1.13
 
@@ -884,7 +884,14 @@ CREATE TABLE IF NOT EXISTS `users` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `firstname`, `subject`, `phone`, `message`, `email`, `created_at`, `updated_at`) VALUES
+(1, 'rishi', 'test', '+917827305102', 'somthing', 'rishianand001@gmail.com', '2023-03-22 11:46:08', '2023-03-22 11:46:08');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

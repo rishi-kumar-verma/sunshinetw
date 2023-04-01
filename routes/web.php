@@ -15,14 +15,31 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\SingleBlogController;
 Route::get("/",[HomeController::class,"viewhome"]);
 Route::get("/home",[HomeController::class,"viewhome"]);
+
+Route::get("/founder",[Controller::class,"viewfounder"]);
+Route::get("/chairman",[Controller::class,"viewchairman"]);
+Route::get("/director",[Controller::class,"viewdirector"]);
+Route::get("/schairman",[Controller::class,"viewschairman"]);
+Route::get("/head",[Controller::class,"viewhead"]);
 Route::get("/about",[AboutController::class,"viewabout"]);
+Route::get("/alumni",[Controller::class,"viewalumni"]);
+
+Route::get("/achievement",[Controller::class,"viewachievement"]);
+Route::get("/events",[Controller::class,"viewevents"]);
+Route::get("/gallery",[Controller::class,"viewgallery"]);
+Route::get("/mentors",[Controller::class,"viewmentors"]);
+Route::get("/beteacher",[Controller::class,"viewbeteacher"]);
+
+
+Route::get("/contact",[Controller::class,"viewcontact"]);
+
+
 Route::get("/team",[TeamController::class,"viewteam"]);
 Route::get("/testimonial",[TestimonialController::class,"viewtest"]);
 Route::get("/services",[HomeController::class,"viewservices"]);
 Route::get("/portfolio",[PortfolioThreeController::class,"viewport"]);
 Route::get("/portfolio-single",[PortfolioController::class,"viewport"]);
 Route::get("/blog-list",[SingleBlogController::class,"viewbloglist"]);
-Route::get("/contact",[Controller::class,"viewcontact"]);
 Route::get("/blog-single",[SingleBlogController::class,"viewblog"]);
 Route::get('/blog/{id}',[SingleBlogController::class,'showblog']);
 

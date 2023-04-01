@@ -169,6 +169,112 @@ class Controller extends BaseController
 
         return view('admin.Contact.contactsection2');
     }
+    public function viewfounder()
+    {
+        try {
+            return View('founder');
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+        }
+    }
+
+    public function viewchairman()
+    {
+        try {
+            return View('chairman');
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+        }
+    }
+
+    public function viewdirector()
+    {
+        try {
+            return View('director');
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+        }
+    }
+
+    public function viewschairman()
+    {
+        try {
+            return View('schairman');
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+        }
+    }
+    public function viewhead()
+    {
+        try {
+            return View('head-management');
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+        }
+    }
+
+    public function viewalumni()
+    {
+        try {
+            return View('alumni');
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+        }
+    }
+    public function viewachievement()
+    {
+        try {
+            return View('achievement');
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+        }
+    }
+    public function viewevents()
+    {
+        try {
+            return View('events');
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+        }
+    }
+    public function viewgallery()
+    {
+        try {
+            return View('gallery');
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+        }
+    }
+    public function viewmentors()
+    {
+        try {
+            return View('mentors');
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+        }
+    }
+    public function viewbeteacher()
+    {
+        try {
+            return View('beteacher');
+        } catch (Exception $e) {
+
+            return $e->getMessage();
+        }
+    }
+
+
+
     public function viewcontact()
     {
         try {

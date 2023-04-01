@@ -57,45 +57,45 @@
 											<li class="dropdown">
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
 												<ul class="dropdown-menu">
-													<li><a href="founder.html">Founder</a></li>
-													<li><a href="chairman.html">Chairman</a></li>
-													<li><a href="director.html">Director-Manager</a></li>
+													<li><a href="founder">Founder</a></li>
+													<li><a href="chairman">Chairman</a></li>
+													<li><a href="director">Director-Manager</a></li>
 
-													<li><a href="schairman.html">Society Adhyaksh</a></li>
-													<li><a href="head.html">Head Of Management</a></li>
-													<li><a href="aboutus.html">School</a></li>
+													<li><a href="schairman">Society Adhyaksh</a></li>
+													<li><a href="head">Head Of Management</a></li>
+													<li><a href="about">School</a></li>
 
 												</ul>
 											</li><!-- End Contact -->
 
 
 											<li class="dropdown">
-												<a href="alumni.html"> Alumni</a>
+												<a href="alumni"> Alumni</a>
 
 											</li><!-- End Teacher -->
 											<li class="dropdown">
 
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Event</a>
 												<ul class="dropdown-menu">
-													<li><a href="achievement.html">Achievement</a></li>
-													<li><a href="events.html">Event</a></li>
+													<li><a href="achievement">Achievement</a></li>
+													<li><a href="events">Event</a></li>
 												</ul>
 
 											</li><!-- End Pages -->
 											<li class="dropdown">
 
 											<li class="dropdown">
-												<a href="gallery.html">Gallery</a>
+												<a href="gallery">Gallery</a>
 
 											</li><!-- End Pages -->
 
 											<li class="dropdown">
-												<a href="mentors.html">Mentors</a>
+												<a href="mentors">Mentors</a>
 
 											</li><!-- End Pages -->
 
 											<li class="dropdown">
-												<a href="beteacher.html">Career</a>
+												<a href="beteacher">Career</a>
 
 											</li><!-- End Pages -->
 
