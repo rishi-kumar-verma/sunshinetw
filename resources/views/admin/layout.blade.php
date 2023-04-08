@@ -65,14 +65,23 @@
               <ul class="nav side-menu">
                 <li><a><i class="fa fa-sitemap"></i>Home Settings <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="#">Banner</a></li>
+                    <li><a><i></i>Home Banner <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="{{('view_banner')}}">View Banner</a></li>
+                        <li><a href="{{('create_banner')}}">Create Banner</a></li>
+                      </ul>
+                    </li>
                     <li><a href="#">About</a></li>
+                    <li><a><i></i>Home Reviews <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="{{('view_reviews')}}">View Reviews</a></li>
+                        <li><a href="{{('create_reviews')}}">Add Reviews</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
                 <li><a><i class="fa fa-sitemap"></i>About Settings <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="#">Banner</a></li>
-                    <li><a href="#">About</a></li>
                     <li><a href="#">Founder</a></li>
                     <li><a href="#">Chairman</a></li>
                     <li><a href="#">Director-Manager</a></li>
@@ -83,12 +92,20 @@
                 </li>
                 <li><a><i class="fa fa-sitemap"></i>Alumni Settings <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="#">Alumni</a></li>
+                    <li><a href="{{('view_team')}}">View Alumni</a></li>
+                    <li><a href="{{('create_team')}}">Create Alumni</a></li>
                   </ul>
                 </li>
                 <li><a><i class="fa fa-sitemap"></i>events Settings <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="#">events</a></li>
+                    <li><a href="{{('view_event')}}">View Events</a></li>
+                    <li><a href="{{('create_event')}}">Add Events</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-sitemap"></i>Achievements Settings <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="{{('view_achievement')}}">View Achievements</a></li>
+                    <li><a href="{{('create_achievement')}}">Add Achievements</a></li>
                   </ul>
                 </li>
                 <li><a><i class="fa fa-sitemap"></i>Gallery Settings <span class="fa fa-chevron-down"></span></a>
@@ -99,7 +116,8 @@
                 </li>
                 <li><a><i class="fa fa-sitemap"></i>Mentors Settings <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="#">Mentors</a></li>
+                    <li><a href="{{('view_mentor')}}">View Mentors</a></li>
+                    <li><a href="{{('create_mentor')}}">Create Mentors</a></li>
                   </ul>
                 </li>
                 <li><a><i class="fa fa-sitemap"></i>Career Settings <span class="fa fa-chevron-down"></span></a>
@@ -193,22 +211,10 @@
                         <li><a href="{{('create_teambanner')}}">Create Banner</a></li>
                       </ul>
                     </li>
-                    <li><a><i></i> Team Members <span class="fa fa-chevron-down"></span></a>
-                      <ul class="nav child_menu">
-                        <li><a href="{{('view_team')}}">View Team</a></li>
-                        <li><a href="{{('create_team')}}">Create Team Member</a></li>
-                      </ul>
-                    </li>
                     <li><a> Testimonial Banner <span class="fa fa-chevron-down"></span></a>
                       <ul class="nav child_menu">
                         <li><a href="{{('view_testimonialbanner')}}">View Banner</a></li>
                         <li><a href="{{('create_testimonialbanner')}}">Create Banner</a></li>
-                      </ul>
-                    </li>
-                    <li><a><i></i> Clients Reviews <span class="fa fa-chevron-down"></span></a>
-                      <ul class="nav child_menu">
-                        <li><a href="{{('view_reviews')}}">View Reviews</a></li>
-                        <li><a href="{{('create_reviews')}}">Add Reviews</a></li>
                       </ul>
                     </li>
 

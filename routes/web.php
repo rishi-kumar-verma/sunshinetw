@@ -154,7 +154,7 @@ Route::get('/edit_teambanner',[TeamController::class,'editbanner']);
 
 
 
-//teamsection2
+//Alumni
 Route::get('/create_team',[TeamController::class,'createteamsecondsection']);
 Route::post('/create_team',[TeamController::class,'addteam2ndsection']);
 Route::get('/view_team',[TeamController::class,'displayteam2ndsection']);
@@ -162,6 +162,11 @@ Route::get('/edit_team/{id}',[TeamController::class,'editteam2ndsection']);
 Route::post('/updateteam',[TeamController::class,'updateteam2ndsection']);
 Route::get('del_team/{id}',[TeamController::class,'destroysection2']);
 
+//Mentors
+Route::get('/create_mentor',[TeamController::class,'createteamsecondsection']);
+Route::get('/view_mentor',[TeamController::class,'displayteam2ndsection']);
+Route::get('/edit_mentor/{id}',[TeamController::class,'editteam2ndsection']);
+Route::get('del_mentor/{id}',[TeamController::class,'destroysection2']);
 
 
 //Testimonial banner
@@ -202,15 +207,27 @@ Route::post('/create_portfoliobanner',[PortfolioThreeController::class,'addbanne
 Route::get('/view_portfoliobanner',[PortfolioThreeController::class,'displaybannersection']);
 Route::get('/edit_portfoliobanner',[PortfolioThreeController::class,'editbanner']);
 
-//portfolio3section2
+//gallery
 Route::get('/create_gallery',[PortfolioThreeController::class,'creategallery']);
 Route::post('/create_gallery',[PortfolioThreeController::class,'addgallery']);
 Route::get('/view_gallery',[PortfolioThreeController::class,'displaygallery']);
 Route::get('/edit_gallery/{id}',[PortfolioThreeController::class,'editgallery']);
-Route::post('/updategallery',[PortfolioThreeController::class,'updategallery']);
+Route::post('/update-gallery',[PortfolioThreeController::class,'updategallery']);
 Route::get('del_gallery/{id}',[TestimonialController::class,'delgallery']);
 
+//Events
+Route::get('/create_event',[PortfolioThreeController::class,'creategallery']);
+Route::get('/view_event',[PortfolioThreeController::class,'displaygallery']);
+Route::get('/edit_event/{id}',[PortfolioThreeController::class,'editgallery']);
+Route::post('/update-event',[PortfolioThreeController::class,'updategallery']);
+Route::get('del_event/{id}',[TestimonialController::class,'delgallery']);
 
+//Achievements
+Route::get('/create_achievement',[PortfolioThreeController::class,'creategallery']);
+Route::get('/view_achievement',[PortfolioThreeController::class,'displaygallery']);
+Route::get('/edit_achievement/{id}',[PortfolioThreeController::class,'editgallery']);
+Route::post('/update-achievement',[PortfolioThreeController::class,'updategallery']);
+Route::get('del_achievement/{id}',[TestimonialController::class,'delgallery']);
 
 //Blog List banner
 Route::get('/create_bloglistbanner',[BlogController::class,'createbannersection']);

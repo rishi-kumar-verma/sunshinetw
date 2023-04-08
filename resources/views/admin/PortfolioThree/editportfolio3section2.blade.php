@@ -1,7 +1,25 @@
 @extends('admin.layout')
 @section('content')
+<?php
+$url = explode("/", Request::path());
+
+if ($url[0] === 'edit_achievement') {
+    $filter = 'Achievement';
+    $action = 'update-achievement';
+}
+if ($url[0] === 'edit_event') {
+    $filter = 'Event';
+    $action = 'update-event';
+}
+if ($url[0] === 'edit_gallery') {
+    $filter = 'Gallery';
+    $action = 'update-gallery';
+}
+?>
 <div class="row">
-    <form action="{{url('updategallery')}}" method="post" enctype="multipart/form-data">
+
+    <form action="{{url( $action )}}" method="post" enctype="multipart/form-data">
+
         <input type="hidden" value="{{$info['id']}}" name="id">
 
         @csrf
@@ -47,15 +65,22 @@
                             <div class="hidden form-group">
                                 <label for="exampleFormControlTextarea1">Catagory</label>
                                 <select id="formGroupExampleInput" class="form-control" name="catagory">
-                                    <option value="Gallery" selected>Gallery</option>
-                                    <option value="Event">Event</option>
-                                    <option value="Achievement">Achievement</option>
+                                    <option value={{$filter}} selected>{{ $filter }}</option>
                                 </select>
                             </div>
                             <br>
                             <!-- <button type="button" class="btn btn-block btn-success btn-sm"><i class="fa fa-save"></i><span> &nbsp; SAVE</span></button> -->
                             <button class="btn btn-success btn-lg" type="submit" name="submit">Update</button>
+                            @if($filter == 'Gallery')
                             <a href="{{url('view_gallery')}}" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Back</a>
+                            @endif
+                            @if($filter == 'Event')
+                            <a href="{{url('view_event')}}" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Back</a>
+                            @endif
+                            @if($filter == 'Achievement')
+                            <a href="{{url('view_achievement')}}" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Back</a>
+                            @endif
+
 
 
 

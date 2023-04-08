@@ -27,7 +27,17 @@
 
                 <div class="clearfix"></div>
             </div>
-
+            <?php
+            if (Request::path() === 'create_achievement') {
+                $filter = 'Achievement';
+            }
+            if (Request::path() === 'create_event') {
+                $filter = 'Event';
+            }
+            if (Request::path() === 'create_gallery') {
+                $filter = 'Gallery';
+            }
+            ?>
             <div class="x_content">
                 <div class="form-group has-feedback" style="position:relative;">
                     <div class="form-group">
@@ -44,14 +54,12 @@
                             <label for="exampleFormControlTextarea1">Description</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" name="description"></textarea>
                         </div>
-                        <div class="hidden form-group">
-                                <label for="exampleFormControlTextarea1">Catagory</label>
-                                <select id="formGroupExampleInput" class="form-control" name="catagory">
-                                    <option value="Gallery" selected>Gallery</option>
-                                    <option value="Event">Event</option>
-                                    <option value="Achievement">Achievement</option>
-                                </select>
-                            </div>
+                        <div class=" hidden form-group">
+                            <label for="exampleFormControlTextarea1">Catagory</label>
+                            <select id="formGroupExampleInput" class="form-control" name="catagory">
+                                <option value={{$filter}} selected>{{ $filter }}</option>
+                            </select>
+                        </div>
                         <br>
                         <!-- <button type="button" class="btn btn-block btn-success btn-sm"><i class="fa fa-save"></i><span> &nbsp; SAVE</span></button> -->
                         <button class="btn btn-primary" type="submit" name="submit">Submit</button>
