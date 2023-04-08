@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="{{ asset('images/favicon.ico')}}" type="image/ico" />
 
-  <title>Interact Tech Solution | </title>
+  <title>Sunshine | </title>
 
   <!-- Bootstrap -->
   <link href="{{ asset('/admin_theme/vendors/bootstrap/dist/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -37,7 +37,7 @@
       <div class="col-md-3 left_col">
         <div class="left_col scroll-view">
           <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Interact Tech Solution </span></a>
+            <a href="dashboard" class="site_title"><i class="fa fa-paw"></i> <span>Sunshine </span></a>
           </div>
 
           <div class="clearfix"></div>
@@ -47,7 +47,7 @@
 
             <div class="profile_info">
               <span><strong>
-                  <h4>Welcome Admin</h4>
+                  <h4>Admin</h4>
                 </strong></span>
 
             </div>
@@ -60,12 +60,67 @@
           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
             <div class="menu_section">
               <a href="{{('dashboard')}}">
-                <h3><i class="fa fa-home"></i> Home Page</h3>
+                <h3><i class="fa fa-home"></i> Home</h3>
               </a>
               <ul class="nav side-menu">
-                <li><a><i class="fa fa-sitemap"></i>Settings <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-sitemap"></i>Home Settings <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                  <li><a> Contact Us <span class="fa fa-chevron-down"></span></a>
+                    <li><a href="#">Banner</a></li>
+                    <li><a href="#">About</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-sitemap"></i>About Settings <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="#">Banner</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Founder</a></li>
+                    <li><a href="#">Chairman</a></li>
+                    <li><a href="#">Director-Manager</a></li>
+                    <li><a href="#">Society Adhyaksh</a></li>
+                    <li><a href="#">Head Of Management</a></li>
+                    <li><a href="#">School</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-sitemap"></i>Alumni Settings <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="#">Alumni</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-sitemap"></i>events Settings <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="#">events</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-sitemap"></i>Gallery Settings <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="{{('view_gallery')}}">View Gallery</a></li>
+                    <li><a href="{{('create_gallery')}}">Add Photo</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-sitemap"></i>Mentors Settings <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="#">Mentors</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-sitemap"></i>Career Settings <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="#">Career</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-sitemap"></i>Contact Settings <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="{{('view_contactus')}}">View Contact Us</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+
+
+              <!-- In developement -->
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-sitemap"></i>Other <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a> Contact Us <span class="fa fa-chevron-down"></span></a>
                       <ul class="nav child_menu">
                         <li><a href="{{('view_contactus')}}">View Contact Us</a></li>
                       </ul>
@@ -174,12 +229,6 @@
                       <ul class="nav child_menu">
                         <li><a href="{{('view_portfoliobanner')}}">View Banner</a></li>
                         <li><a href="{{('create_portfoliobanner')}}">Create Banner</a></li>
-                      </ul>
-                    </li>
-                    <li><a><i></i>Our Portfolio Gallery<span class="fa fa-chevron-down"></span></a>
-                      <ul class="nav child_menu">
-                        <li><a href="{{('view_gallery')}}">View Gallery</a></li>
-                        <li><a href="{{('create_gallery')}}">Add Photo</a></li>
                       </ul>
                     </li>
 

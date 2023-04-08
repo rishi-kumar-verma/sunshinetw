@@ -34,7 +34,6 @@
                            <th scope="col">ID</th>
                             <th scope="col">Title </th>
                             <th scope="col">Description</th>
-                            <th scope="col">Catagory</th>
                             <th scope="col">Image</th>
                             <th>Edit</th>
                         </tr>
@@ -45,9 +44,8 @@
                             <td>{{$info->id}}</td>
                             <td>{{$info->title}}</td>
                             <td>{{$info->description}}</td>
-                            <td>{{$info->catagory}}</td>
                             <td>
-                                <img src="{{ asset('images/gallery/'.$info->image) }}" width="100px" width="50px" alt="Image">
+                                <img src="{{ asset('../images/gallery/'.$info->image) }}" width="100px" width="50px" alt="Image">
                             </td>
                             <td> <a href={{"edit_gallery/".$info['id']}} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Edit</a>
                             <a href="del_gallery/{{ $info->id }}" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Delete</a>
